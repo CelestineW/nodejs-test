@@ -22,13 +22,18 @@
     </div>
         <div class="add-btn box-shadow">
             <p class="new-text"> Start your timeline! </p>
-            <a href="new-timeline">
-
+            <!--<a href="new-timeline">-->
+                <form method="post" action="/new-timeline">
+                <input type="hidden" name="new_topics" value ={{num_topics}}>
                 <!-- Colored FAB button with ripple -->
-                <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                <!--<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
                   <i class="material-icons">add</i>
 
                 </button>
-            </a>
+            -->
+                <input type="submit" value="Add!! PLS"></input>
+
+            </form>
+            <!--</a>  -->
         </div>
 </body>
