@@ -22,7 +22,7 @@
         <p id="length-pres" class="input-field"> Length of Time: <input type="text"></input> </p>
 -->
 
-        <p id="temp">Number of Topics: {{num_topics}}</p></br>
+        <p id="temp">Number of Topics: {{num_topics}} </p></br>
 
         <div id="new-fields"></div>
 

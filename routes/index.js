@@ -49,6 +49,7 @@ router.post('/home', function(req, res, next) {
 router.get('/create-timeline', function(req, res, next) {
     var timeline_n = req.body.timeline_name;
 
+    //var n = myFirebaseRef.child("users/" + username)
 
 //     res.render('create-timeline', {name: timeline_n});
 
@@ -77,6 +78,12 @@ router.get('/new-form', function(req, res, next) {
 });
 
 router.get('/new-timeline', function(req, res, next) {
+
+    //'/dashboard?user=' + username
+
+    var my_user = myFirebaseRef.child("users/" + username);
+    my_user.get(new_topics);
+    
     res.render('new-timeline', {new_topics: new_topics});
 });
 

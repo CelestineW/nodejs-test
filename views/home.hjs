@@ -16,7 +16,7 @@
 
     <h2> Your time period is {{time_mins}} minutes!</h2></br>
     <h2> You have {{num_topics}} topics!</h2></br>
-    
+
     <div>
 
     </div>
