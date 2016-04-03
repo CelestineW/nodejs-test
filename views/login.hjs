@@ -21,25 +21,31 @@
     <!-- insert variable -->
      <!-- title = "Time Planner"
     {{ title }}
+    -->
+
 
     <!-- if invalid_login != null -->
+    <!--
     {{# invalid_login }}
        </br></br>
        <h3>Invalid Login. Username=user Password=pass</h3>
     {{/ invalid_login }}
-    
+    -->    
+
     <!-- if invalid_login == null -->
+    <!--
     {{^ invalid_login }}
     	<p>Not invalid Login</p>
     {{/ invalid_login }}
+    -->
 
     <!-- iterate over a list -->
     <!-- names = ["Mike", "John", "Jane"]
-    <!-- for . in names -->
+    <!-- for . in names 
     {{# names }}
     	<p> {{ . }} </p>
     {{/ names }}
-
+    -->
     <!-- iterate over a list of objects -->
     <!-- list_of_people = [
     	 	{ firstname: "michael", lastname: "bishoff" },
@@ -47,8 +53,10 @@
     	 ]
     -->
     <!-- for people in list_of_people -->
+    <!--
     {{# people }}
     	<p>Welcome: {{ firstname }} {{ lastname }}</p>
     {{/ people }}
+    -->
 
 </body>
