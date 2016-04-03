@@ -7,16 +7,20 @@
 
 <body>
 
-    This is the login page.</br></br>
+    <div class="box-shadow">
 
-    <form id="login-form" method="post" action="/home">
+        This is the login page.</br></br>
 
-        Enter username: <input type="text" name="username"></input></br>
-        Enter password: <input type="password" name="password"></input></br></br>
+        <form id="login-form" method="post" action="/home">
 
-        <input type="submit" value="login!"></input>
+            Enter username: <input type="text" name="username"></input></br>
+            Enter password: <input type="password" name="password"></input></br></br>
 
-    </form>
+            <input type="submit" value="login!"></input>
+
+        </form>
+
+    </div>
 
     {{title}}
 
