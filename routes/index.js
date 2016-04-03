@@ -25,7 +25,7 @@ router.post('/home', function(req, res, next) {
 */
     
 //    var time_mins = (time_amt*time_unit)/60;
-    var time_mins = time_amt*time_unit;
+    var time_mins = time_amt*time_unit/60;
 
     var newUser = myFirebaseRef.child("users/" + username);
 
