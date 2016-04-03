@@ -37,7 +37,7 @@
     <!-- names = ["Mike", "John", "Jane"]
     <!-- for . in names -->
     {{# names }}
-    	<p> {{ . }}
+    	<p> {{ . }} </p>
     {{/ names }}
 
     <!-- iterate over a list of objects -->
