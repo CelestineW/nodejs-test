@@ -1,0 +1,153 @@
+.hide
+{
+  display: none;
+}
+
+.torte
+{
+    width: 25em;
+    height: 25em;
+    position: absolute;
+    display: inline-block;
+    z-index: 2;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    float: left;
+}
+
+.kuchi
+{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    transition: all 0.2s ease-in-out;
+}
+
+.pie {
+		position:absolute;
+		width:50%;
+		height:100%;
+		overflow:hidden;
+		left:50%;
+		-moz-transform-origin:left center;
+		-ms-transform-origin:left center;
+		-o-transform-origin:left center;
+		-webkit-transform-origin:left center;
+		transform-origin:left center;
+	}
+
+.pie:BEFORE {
+		content:"";
+		position:absolute;
+		width:50%;
+		height:100%;
+		left:-50%;
+    border-radius:50%x 0 0 100px;*/
+		-moz-transform-origin:right center;
+		-ms-transform-origin:right center;
+		-o-transform-origin:right center;
+		-webkit-transform-origin:right center;
+		transform-origin:right center;
+
+	}
+
+.pie:BEFORE,
+	.pie:AFTER {
+		background-color: #FF8B52;
+	}
+
+.pie[data-value="21"]:BEFORE {
+		-moz-transform: rotate(24deg); /* Firefox */
+		-ms-transform: rotate(24deg); /* IE */
+		-webkit-transform: rotate(24deg); /* Safari and Chrome */
+		-o-transform: rotate(24deg); /* Opera */
+		transform:rotate(24deg);
+	}
+
+.kuchi[data-value="0"]
+{
+    transform: rotate(0deg);
+}
+
+.kuchi[data-value="21"]
+{
+    transform: rotate(21deg);
+}
+
+.kuchi[data-value="42"]
+{
+    transform: rotate(42deg);
+}
+
+.kuchi[data-value="63"]
+{
+    transform: rotate(63deg);
+}
+
+.kuchi[data-value="84"]
+{
+    transform: rotate(84deg);
+}
+
+.kuchi[data-value="105"]
+{
+    transform: rotate(105deg);
+}
+
+.kuchi[data-value="126"]
+{
+    transform: rotate(126deg);
+}
+
+.kuchi[data-value="147"]
+{
+    transform: rotate(147deg);
+}
+
+.kuchi[data-value="168"]
+{
+    transform: rotate(168deg);
+}
+
+.kuchi[data-value="189"]
+{
+    transform: rotate(189deg);
+}
+
+.kuchi[data-value="210"]
+{
+    transform: rotate(210deg);
+}
+
+.kuchi[data-value="231"]
+{
+    transform: rotate(231deg);
+}
+
+.kuchi[data-value="252"]
+{
+    transform: rotate(252deg);
+}
+
+.kuchi[data-value="273"]
+{
+    transform: rotate(273deg);
+}
+
+.kuchi[data-value="294"]
+{
+    transform: rotate(294deg);
+}
+
+.kuchi[data-value="315"]
+{
+    transform: rotate(315deg);
+}
+
+.kuchi[data-value="336"]
+{
+    transform: rotate(336deg);
+}

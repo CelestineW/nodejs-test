@@ -1,0 +1,54 @@
+body {
+    padding: 20px;
+
+}
+
+.add-btn {
+
+    margin: 0;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 5px;
+
+}
+
+.new-text {
+    margin: 0;
+    padding-right: 10px;
+    color: gray;
+    font-size: 20px;
+}
+
+.box-shadow {
+
+    /* material design */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+}
+
+.new-timeline-form {
+    padding: 10px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 20px;
+    left:0;
+}
+
+#name {
+
+}
+
+#length-pres {
+
+}
+
+.newChunk {
+    border: 1px solid red;
+    padding: 10px;
+    margin-bottom: 10px;
+}
