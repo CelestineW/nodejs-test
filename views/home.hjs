@@ -15,6 +15,9 @@
 
     <h1>Welcome to Planet Time!</h1></br>
 
+    <div>
+
+    </div>
         <div class="add-btn box-shadow">
             <p class="new-text"> Create a new timeline! </p>
             <a href="new-timeline">

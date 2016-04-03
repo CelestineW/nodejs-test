@@ -18,6 +18,9 @@
 
     </form>
 
+    {{title}}
+
+
     <!-- insert variable -->
      <!-- title = "Time Planner"
     {{ title }}
