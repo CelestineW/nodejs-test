@@ -32,9 +32,9 @@
 
     </div>
 
-    {{msg}}
-
     </div>
+
+
 
     <!-- insert variable -->
      <!-- title = "Time Planner"

@@ -12,7 +12,6 @@
 </head>
 
 <body>
-
     <h1>Welcome to Planet Time, {{username}}!</h1></br>
 
     <h2> Your time period is {{timeframe}} minutes!<h/2></br>
@@ -22,11 +21,12 @@
         <div class="add-btn box-shadow">
             <p class="new-text"> Start your timeline! </p>
             <a href="new-timeline">
+
                 <!-- Colored FAB button with ripple -->
                 <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
                   <i class="material-icons">add</i>
+
                 </button>
             </a>
         </div>
-
 </body>
