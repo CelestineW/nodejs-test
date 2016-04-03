@@ -15,6 +15,11 @@
 
             Enter username: <input type="text" name="username"></input></br>
 	    Enter Time Period: <input type="range" name="time_amt" min="5" max="20"></input></br>
+	    Enter Time Unit: 
+	    <input type="radio" name="secs_u" value="time_unit" checked> Seconds <br>
+	      <input type="radio" name="mins_u" value="time_unit"> Minutes<br>
+	        <input type="radio" name="days_u" value="time_unit"> Days <br>
+
 <!--            Enter password: <input type="password" name="password"></input></br> -->
 </br>
 
