@@ -25,14 +25,11 @@
 
     {{title}}
 
-=======
-
             <input type="submit" value="login!"></input>
 
         </form>
 
     </div>
->>>>>>> 6f34a82689db8d452bc1549436d914fcbc458520
 
     <!-- insert variable -->
      <!-- title = "Time Planner"
