@@ -24,20 +24,22 @@
 
         <p style="display:none" id="temp">{{num_topics}}</p>
 
-        <script> window.onload = function() {
-            var bound = document.getElementById("temp").innerHTML;
-            for (i=0; i < bound ; i++)
-            {
-                var node = document.createElement("DIV");
-                var textnode = document.createTextNode("Test");
-                node.appendChild(textnode);
-                node.className = "newChunk";
+        <script>
 
-                node.innerHTML = 'Chunk Name: <input type="text"></input></br></br> Weight: <input type="text"></input>';
+        var bound = document.getElementById("temp").innerHTML;
+        console.log(bound);
 
-                document.getElementById("new-fields").appendChild(node);
-            }
-        };
+        for (i=0; i < bound ; i++)
+        {
+            var node = document.createElement("DIV");
+            var textnode = document.createTextNode("Test");
+            node.appendChild(textnode);
+            node.className = "newChunk";
+
+            node.innerHTML = 'Chunk Name: <input type="text"></input></br></br> Weight: <input type="text"></input>';
+
+            document.getElementById("new-fields").appendChild(node);
+        }
 
         </script>
 
@@ -53,7 +55,7 @@
         </div> -->
 
         <!-- SAVE THESE INTO THE DB -->
-        <!-- <div id="new-fields"></div> -->
+        <div id="new-fields"></div>
 
         <a href="create-timeline">
             <button onclick="submitForm()"> CREATE TIMELINE </button>
