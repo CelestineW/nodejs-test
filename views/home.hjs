@@ -12,8 +12,11 @@
 </head>
 
 <body>
+	var uname = {{username}};
 
     <h1>Welcome to Planet Time!</h1></br>
+
+    uname
 
     <div>
 
