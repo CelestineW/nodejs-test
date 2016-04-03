@@ -22,7 +22,9 @@
         <p id="length-pres" class="input-field"> Length of Time: <input type="text"></input> </p>
 -->
 
-        <p style="display:none" id="temp">{{num_topics}}</p>
+        <p id="temp">Number of Topics: {{num_topics}}</p></br>
+
+        <div id="new-fields"></div>
 
         <script>
 
@@ -53,9 +55,6 @@
                 </button>
             </a>
         </div> -->
-
-        <!-- SAVE THESE INTO THE DB -->
-        <div id="new-fields"></div>
 
         <a href="create-timeline">
             <button onclick="submitForm()"> CREATE TIMELINE </button>
