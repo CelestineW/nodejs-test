@@ -22,8 +22,11 @@
         <p id="length-pres" class="input-field"> Length of Time: <input type="text"></input> </p>
 -->
 
+        <p style="display:none" id="temp">{{num_topics}}</p>
+
         <script> window.onload = function() {
-            for (i=0; i < {{num_topics}} ; i++)
+            var bound = document.getElementById("temp").innerHTML;
+            for (i=0; i < bound ; i++)
             {
                 var node = document.createElement("DIV");
                 var textnode = document.createTextNode("Test");
