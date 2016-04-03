@@ -12,7 +12,7 @@
     <form id="login-form" method="post" action="/home">
 
         Enter username: <input type="text" name="username"></input></br>
-        Enter password: <input type="text" name="password"></input></br></br>
+        Enter password: <input type="password" name="password"></input></br></br>
 
         <input type="submit" value="login!"></input>
 
