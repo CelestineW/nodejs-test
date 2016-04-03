@@ -23,7 +23,7 @@
 
     </div>
 
-    {{title}}
+    {{msg}}
 
     </div>
 
@@ -34,12 +34,12 @@
 
 
     <!-- if invalid_login != null -->
-
+<!--
     {{# invalid_login }}
        </br></br>
        <h3>Invalid Login. Username=user </h3>
     {{/ invalid_login }}
-
+-->
 
     <!-- if invalid_login == null -->
     <!--

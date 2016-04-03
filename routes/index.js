@@ -37,10 +37,9 @@ router.get('/login-user', function(req, res, next) {
 });
 
 router.get('/login', function(req, res, next) {
-    
 
     res.render('login',
-	       {title: "Home- from the .js file",
+	       {title: "why is tis here?",
 		invalid_login: true,
 		names: ["Mike", "John", "Jane"],
 		people: [{ firstname: "Michael", lastname: "Bishoff" },
