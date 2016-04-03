@@ -45,7 +45,14 @@ router.post('/home', function(req, res, next) {
 });
 
 router.get('/create-timeline', function(req, res, next) {
-    res.render('create-timeline', {});
+    var timeline_n = req.body.timeline_name;
+
+
+//     res.render('create-timeline', {name: timeline_n});
+
+     res.render('view-timeline', {name: timeline_n});
+
+
 });
 
 router.get('/login-user', function(req, res, next) {
