@@ -14,7 +14,7 @@
         <form id="login-form" method="post" action="/home">
 
             Enter username: <input type="text" name="username"></input></br>
-	    Enter Time Period: <input type="time" name="time_amt"></input></br>
+	    Enter Time Period: <input type="range" name="time_amt" min="5" max="20"></input></br>
 <!--            Enter password: <input type="password" name="password"></input></br> -->
 </br>
 
