@@ -22,26 +22,35 @@
         <p id="length-pres" class="input-field"> Length of Time: <input type="text"></input> </p>
 -->
 
+        <script> window.onload = function() {
+            for (i=0; i < {{num_topics}} ; i++)
+            {
+                var node = document.createElement("DIV");
+                var textnode = document.createTextNode("Test");
+                node.appendChild(textnode);
+                node.className = "newChunk";
 
-        <div class="add-btn input-field">
-            <p class="new-text">Add new chunk of time!</p>
+                node.innerHTML = 'Chunk Name: <input type="text"></input></br></br> Weight: <input type="text"></input>';
+
+                document.getElementById("new-fields").appendChild(node);
+            }
+        };
+
+        </script>
+
+        <!-- <div class="add-btn input-field">
+            <p class="new-text">Add new chunk of time!</p> -->
 
             <!-- Colored FAB button with ripple -->
-            <a onclick="addTopic()">
+            <!--<a onclick="addTopic()">
                 <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
                   <i class="material-icons">add</i>
                 </button>
             </a>
-        </div>
-
-        <div class="newChunk">
-            Chunk Name: <input type="text"></input></br></br>
-            Weight: <input type="text"></input>
-
-        </div>
+        </div> -->
 
         <!-- SAVE THESE INTO THE DB -->
-        <div id="new-fields"></div>
+        <!-- <div id="new-fields"></div> -->
 
         <a href="create-timeline">
             <button onclick="submitForm()"> CREATE TIMELINE </button>
