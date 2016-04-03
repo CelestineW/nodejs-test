@@ -30,8 +30,7 @@ router.post('/home', function(req, res, next) {
 
     //newUser.set({"time_frame": time_mins});
 
-    res.redirect('/dashboard?user=' + username);
-
+    res.render('home', {username: username});
 	
 /*
 	if (user == null) {
