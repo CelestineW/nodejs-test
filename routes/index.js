@@ -30,7 +30,7 @@ router.post('/home', function(req, res, next) {
 
     newUser.set({"time_frame": time_mins});
 
-    res.render('home', {username: username},{time_frame: time_frame});
+    res.render('home', {username: username},{time_frame: time_mins});
 	
 /*
 	if (user == null) {
