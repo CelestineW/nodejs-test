@@ -18,16 +18,17 @@ router.post('/home', function(req, res, next) {
     var username = req.body.username;
 //    var password = req.body.password;
     var time_amt = req.body.time_amt;
-    
+    var time_unit = req.body.time_unit;
 /*
     myFirebaseRef.child("users/" + username).once("value", function(snapshot){
 	var user = snapshot.val();
 */
     
+    var time_mins = (time_amt*time_unit)/60;
 
     var newUser = myFirebaseRef.child("users/" + username);
 
-    newUser.set({"time_frame": time_amt});
+    newUser.set({"time_frame": time_mins});
 
     res.redirect('/dashboard?user=' + username);
 
