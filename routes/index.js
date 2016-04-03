@@ -13,10 +13,10 @@ router.get('/home', function(req, res, next) {
     res.render('home', {});  // goes to home.hjs
 });
 
-/* POST request to login */
+/* POST request to user*/
 router.post('/home', function(req, res, next) {
     var username = req.body.username;
-    var password = req.body.password;
+//    var password = req.body.password;
     
     myFirebaseRef.child("users/" + username).once("value", function(snapshot){
 	var user = snapshot.val();
@@ -24,7 +24,7 @@ router.post('/home', function(req, res, next) {
 	if (user == null) {
 	    res.render('login', {invalid_login: true});
 	}
-	res.render('home', {});
+	res.render('home', {username: username});
     });
 });
 

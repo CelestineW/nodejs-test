@@ -14,7 +14,8 @@
         <form id="login-form" method="post" action="/home">
 
             Enter username: <input type="text" name="username"></input></br>
-            Enter password: <input type="password" name="password"></input></br></br>
+<!--            Enter password: <input type="password" name="password"></input></br> -->
+</br>
 
             <input type="submit" value="login!"></input>
 
@@ -33,12 +34,12 @@
 
 
     <!-- if invalid_login != null -->
-    <!--
+
     {{# invalid_login }}
        </br></br>
-       <h3>Invalid Login. Username=user Password=pass</h3>
+       <h3>Invalid Login. Username=user </h3>
     {{/ invalid_login }}
-    -->
+
 
     <!-- if invalid_login == null -->
     <!--
