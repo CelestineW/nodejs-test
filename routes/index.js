@@ -77,7 +77,7 @@ router.get('/new-form', function(req, res, next) {
 });
 
 router.get('/new-timeline', function(req, res, next) {
-    res.render('new-timeline', {});
+    res.render('new-timeline', {new_topics: new_topics});
 });
 
 router.get('/view-timeline', function(req, res, next) {
