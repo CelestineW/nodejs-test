@@ -29,11 +29,11 @@ router.post('/home', function(req, res, next) {
 
     var newUser = myFirebaseRef.child("users/" + username);
 
-    newUser.set({"time_frame": time_mins});
+    newUser.set({"time_mins": time_mins});
 
-//    res.render('home', {username: username}, {time_frame: time_mins});
+    res.render('home', {username: username}, {time_mins: time_mins});
 
-    res.render('home', {username: username});
+//    res.render('home', {username: username});
 	
 /*
 	if (user == null) {
