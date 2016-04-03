@@ -30,7 +30,7 @@
        </br></br>
        <h3>Invalid Login. Username=user Password=pass</h3>
     {{/ invalid_login }}
-    -->    
+    -->
 
     <!-- if invalid_login == null -->
     <!--
@@ -40,8 +40,8 @@
     -->
 
     <!-- iterate over a list -->
-    <!-- names = ["Mike", "John", "Jane"]
-    <!-- for . in names 
+    <!-- names = ["Mike", "John", "Jane"] -->
+    <!-- for . in names
     {{# names }}
     	<p> {{ . }} </p>
     {{/ names }}
