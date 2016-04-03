@@ -31,7 +31,7 @@ router.post('/home', function(req, res, next) {
 	}
 */
 	res.render('home', {username: username});
-    });
+//    });
 });
 
 router.get('/create-timeline', function(req, res, next) {
