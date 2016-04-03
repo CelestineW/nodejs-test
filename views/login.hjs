@@ -14,7 +14,7 @@
         <form id="login-form" method="post" action="/home">
 
             Enter username: <input type="text" name="username"></input></br>
-	    Enter Time Period: <input type="range" name="time_amt" min="5" max="20"></input></br>
+	    Enter Time Period: <input type="number" name="time_amt" min="5" max="60"></input></br>
 	    Enter Time Unit: 
 	    <input type="radio" name="secs_u" value="time_unit" checked> Seconds <br>
 	      <input type="radio" name="mins_u" value="time_unit"> Minutes<br>
