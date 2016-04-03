@@ -18,12 +18,18 @@ router.post('/home', function(req, res, next) {
     var username = req.body.username;
 //    var password = req.body.password;
     
+/*
     myFirebaseRef.child("users/" + username).once("value", function(snapshot){
 	var user = snapshot.val();
+*/
+    
+	var newUser = myFirebaseRef.child("users/" + username);
 	
+/*
 	if (user == null) {
 	    res.render('login', {invalid_login: true});
 	}
+*/
 	res.render('home', {username: username});
     });
 });

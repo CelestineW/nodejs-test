@@ -19,7 +19,7 @@
 
     </div>
         <div class="add-btn box-shadow">
-            <p class="new-text"> Start your {{username}} timeline! </p>
+            <p class="new-text"> Start your timeline! </p>
             <a href="new-timeline">
                 <!-- Colored FAB button with ripple -->
                 <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
