@@ -22,7 +22,7 @@
 	      <input type="radio" name="time_unit" value=1> Minutes<br>
 	        <input type="radio" name="time_unit" value=60> Hours <br>
 
-        Enter Number of Topics: <input type="number" name="num_topic" min="1"></input></br>
+        Enter Number of Topics: <input type="number" name="num_topics" min="1"></input></br>
 
 
 <!--            Enter password: <input type="password" name="password"></input></br> -->
