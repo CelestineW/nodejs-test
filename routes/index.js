@@ -24,13 +24,16 @@ router.post('/home', function(req, res, next) {
 	var user = snapshot.val();
 */
     
-    var time_mins = (time_amt*time_unit)/60;
+//    var time_mins = (time_amt*time_unit)/60;
+    var time_mins = timea_amt*time_unit;
 
     var newUser = myFirebaseRef.child("users/" + username);
 
     newUser.set({"time_frame": time_mins});
 
-    res.render('home', {username: username},{time_frame: time_mins});
+//    res.render('home', {username: username}, {time_frame: time_mins});
+
+    res.render('home', {username: username});
 	
 /*
 	if (user == null) {
