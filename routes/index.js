@@ -19,22 +19,24 @@ router.post('/home', function(req, res, next) {
 //    var password = req.body.password;
     var time_amt = req.body.time_amt;
     var time_unit = req.body.time_unit;
+    var num_topics = req.body.num_topics;
 /*
     myFirebaseRef.child("users/" + username).once("value", function(snapshot){
 	var user = snapshot.val();
 */
-    
+
 //    var time_mins = (time_amt*time_unit)/60;
     var time_mins = time_amt*time_unit;
 
     var newUser = myFirebaseRef.child("users/" + username);
 
     newUser.set({"time_mins": time_mins});
+    newUser.set({"num_topics": num_topics});
 
-    res.render('home', {username: username, time_mins: time_mins});
+    res.render('home', {username: username, time_mins: time_mins, num_topics: num_topics});
 
 //    res.render('home', {username: username});
-	
+
 /*
 	if (user == null) {
 	    res.render('login', {invalid_login: true});
@@ -108,7 +110,7 @@ router.post('/', function(req, res, next) {
   var password = req.body.password;
   var fname = req.body.first;
   var lname = req.body.last;
-    
+
   var newUser = myFirebaseRef.child("users/" + username);
 
   newUser.set({"password": password, "first_name": fname, "last_name": lname});
@@ -122,7 +124,7 @@ router.get('/dashboard', function(req, res, next) {
 
     myFirebaseRef.child("users/"+ user).once("value", function(snapshot){
 	var currentUser = snapshot.val();
-	
+
 	res.render('dashboard',{title: "Express", firstname: currentUser.first_name});
     });
 
