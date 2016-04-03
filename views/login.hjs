@@ -18,9 +18,9 @@
 
 	    Enter Time Period: <input type="number" name="time_amt" min="5" max="60"></input></br>
 	    Enter Time Unit: <br>
-	    <input type="radio" name="time_unit" value="1" checked> Seconds <br>
-	      <input type="radio" name="time_unit" value="60"> Minutes<br>
-	        <input type="radio" name="time_unit" value="3600"> Days <br>
+	    <input type="radio" name="time_unit" value=1 checked> Seconds <br>
+	      <input type="radio" name="time_unit" value=60> Minutes<br>
+	        <input type="radio" name="time_unit" value=3600> Days <br>
 
 
 <!--            Enter password: <input type="password" name="password"></input></br> -->
