@@ -10,7 +10,7 @@ router.get('/', function(req, res, next) {
 
 /* GET home page. */
 router.get('/home', function(req, res, next) {
-    res.render('home', {});
+    res.render('home', {});  // goes to home.hjs
 });
 
 /* POST request to login */
@@ -37,8 +37,10 @@ router.get('/login-user', function(req, res, next) {
 });
 
 router.get('/login', function(req, res, next) {
+    
+
     res.render('login',
-	       {title: "Home",
+	       {title: "Home- from the .js file",
 		invalid_login: true,
 		names: ["Mike", "John", "Jane"],
 		people: [{ firstname: "Michael", lastname: "Bishoff" },

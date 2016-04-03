@@ -15,7 +15,6 @@
 
             Enter username: <input type="text" name="username"></input></br>
             Enter password: <input type="password" name="password"></input></br></br>
-<<<<<<< HEAD
 
             <input type="submit" value="login!"></input>
 
@@ -24,10 +23,6 @@
     </div>
 
     {{title}}
-
-            <input type="submit" value="login!"></input>
-
-        </form>
 
     </div>
 
