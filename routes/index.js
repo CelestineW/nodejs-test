@@ -31,7 +31,7 @@ router.post('/home', function(req, res, next) {
 
     newUser.set({"time_mins": time_mins});
 
-    res.render('home', {username: username}, {time_mins: time_mins});
+    res.render('home', {username: username, time_mins: time_mins});
 
 //    res.render('home', {username: username});
 	
